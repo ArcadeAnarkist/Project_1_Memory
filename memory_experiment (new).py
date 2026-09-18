@@ -38,10 +38,11 @@ from tkinter import simpledialog, messagebox
 SEED = None
 random.seed(SEED)
 
-# Keep the repository completely flat: results are saved next to this script.
+# Save participant CSV files in the project-level csv folder.
 # Using __file__ also makes this work when the script is launched from another
 # working directory.
-OUTPUT_DIR = Path(__file__).resolve().parent
+OUTPUT_DIR = Path(__file__).resolve().parent / "csv"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Letters are sampled with replacement, so repetitions are allowed.
 LETTER_POOL = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
