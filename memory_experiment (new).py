@@ -59,8 +59,8 @@ CAPACITY_LENGTHS = [4, 5, 6, 7, 8, 9, 10, 11, 12]
 CAPACITY_REPS_BY_LENGTH = {n: 6 for n in range(4, 10)}
 CAPACITY_REPS_BY_LENGTH.update({10: 8, 11: 8, 12: 8})
 
-IDIOM_REPS = 5
-IDIOMS_PER_TRIAL = 12
+IDIOM_REPS = 8
+IDIOMS_PER_TRIAL = 8
 
 REAL_IDIOMS = [
     "At slå en streg i sandet",
